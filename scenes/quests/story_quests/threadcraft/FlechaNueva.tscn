@@ -4,21 +4,22 @@
 [ext_resource type="Texture2D" uid="uid://c8owfumsiul1" path="res://scenes/quests/story_quests/threadcraft/assets/flecha.png" id="2_vx6d3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_btj30"]
-size = Vector2(130, 17)
+size = Vector2(72, 8)
 
 [node name="Area2D" type="Area2D"]
-collision_mask = 19
+collision_layer = 256
+collision_mask = 17
 script = ExtResource("1_jxtda")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, 2.38419e-07)
+position = Vector2(1.43051e-06, 1.19209e-07)
 rotation = -3.13112
-scale = Vector2(0.160331, 0.196834)
+scale = Vector2(0.0886698, 0.0979054)
 texture = ExtResource("2_vx6d3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -0.5)
+visibility_layer = 3
 shape = SubResource("RectangleShape2D_btj30")
 
 [connection signal="area_entered" from="." to="." method="_on_Flecha_area_entered"]
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_Flecha_body_entered"]

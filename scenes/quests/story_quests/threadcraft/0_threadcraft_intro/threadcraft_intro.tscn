@@ -306,7 +306,7 @@ position = Vector2(923, 301)
 script = ExtResource("4_4jk8v")
 dialogue = ExtResource("11_dk7av")
 animation_player = NodePath("../OnTheGround/AnimationPlayer")
-next_scene = "uid://coi4lvxir542y"
+next_scene = "uid://c5smuyflby4ca"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="Rock" parent="." instance=ExtResource("6_sfdob")]

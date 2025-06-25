@@ -2,7 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 @tool
 class_name Player
+
 extends CharacterBody2D
+
+
+static var tiempo_guardado: float = 0.0
 
 signal mode_changed(mode: Mode)
 
@@ -188,10 +192,21 @@ func _set_walk_sound_stream(new_value: AudioStream) -> void:
 	_walk_sound.stream = walk_sound_stream
 
 
-func activar_hitbox():
+func activar_hitbox() -> void:
 	hitbox.monitoring = true
 	
-
-func desactivar_hitbox():
+	
+func desactivar_hitbox() -> void:
 	hitbox.monitoring = false
 	
+
+var golpes_recibidos: int = 0
+
+func recibir_golpe() -> void:
+	golpes_recibidos += 1
+
+	if golpes_recibidos >= 2:
+		call_deferred("_reiniciar_nivel")
+
+func _reiniciar_nivel() -> void:
+	get_tree().reload_current_scene()

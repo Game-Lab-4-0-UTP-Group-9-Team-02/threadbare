@@ -46,8 +46,9 @@ alpha_curve = SubResource("CurveTexture_j0tly")
 anim_speed_min = 1.0
 anim_speed_max = 1.0
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
-height = 42.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j0tly"]
+radius = 11.1247
+height = 54.0005
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_blfj0"]
 size = Vector2(110, 80)
@@ -443,7 +444,7 @@ _data = {
 &"walk": SubResource("Animation_qek5x")
 }
 
-[node name="Player" type="CharacterBody2D" groups=["player"]]
+[node name="Player" type="CharacterBody2D" groups=["jugador", "player"]]
 collision_mask = 531
 script = ExtResource("1_g2els")
 mode = 1
@@ -470,8 +471,9 @@ autoplay = "idle"
 script = ExtResource("3_qlg0r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-rotation = -1.5708
-shape = SubResource("CapsuleShape2D_3vyb7")
+position = Vector2(6, -15)
+rotation = -3.14864
+shape = SubResource("CapsuleShape2D_j0tly")
 
 [node name="PlayerInteraction" type="Node2D" parent="."]
 unique_name_in_owner = true
@@ -499,10 +501,10 @@ unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1.0
-offset_top = 11.0
-offset_right = 1.0
-offset_bottom = 11.0
+offset_left = -2.0
+offset_top = 3.0
+offset_right = -2.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -512,12 +514,13 @@ script = ExtResource("7_5gtgg")
 
 [node name="HitBox" type="Area2D" parent="PlayerFighting"]
 unique_name_in_owner = true
-collision_layer = 66
-collision_mask = 257
+collision_layer = 67
+collision_mask = 19
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerFighting/HitBox"]
-position = Vector2(10, -27)
+light_mask = 3
+position = Vector2(5, -17)
 shape = SubResource("RectangleShape2D_je7p5")
 debug_color = Color(0.94902, 0.231373, 0, 0.419608)
 
