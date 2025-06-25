@@ -1,16 +1,16 @@
 [gd_scene load_steps=15 format=4 uid="uid://c5smuyflby4ca"]
 
-[ext_resource type="Script" uid="uid://b1w4b3byvg12t" path="res://scenes/quests/story_quests/threadcraft/1_threadcraft_find/threadcraft_stealth.gd" id="1_cpi8a"]
+[ext_resource type="Script" path="res://scenes/quests/story_quests/threadcraft/1_threadcraft_find/threadcraft_stealth.gd" id="1_cpi8a"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="1_kajil"]
 [ext_resource type="Texture2D" uid="uid://boeaxk35yjpwl" path="res://scenes/game_elements/props/door/components/door_closed.png" id="2_yv0au"]
 [ext_resource type="PackedScene" uid="uid://2rbpl811wlv1" path="res://scenes/game_elements/props/background_music/background_music.tscn" id="3_1haig"]
 [ext_resource type="Texture2D" uid="uid://0njcikmjnnlw" path="res://scenes/quests/story_quests/threadcraft/assets/mineral raro (nueva espada).png" id="3_cpi8a"]
-[ext_resource type="Script" uid="uid://ccna2t1gt5ot7" path="res://scenes/quests/story_quests/threadcraft/1_threadcraft_find/area_2d.gd" id="5_1haig"]
+[ext_resource type="Script" path="res://scenes/quests/story_quests/threadcraft/1_threadcraft_find/area_2d.gd" id="5_1haig"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="7_p34jg"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="8_jbyfl"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="9_to386"]
-[ext_resource type="Resource" uid="uid://d2fovavr24m7j" path="res://scenes/quests/story_quests/threadcraft/1_threadcraft_find/threadcraft_stealth_components/threadcraft_dialoque1.dialogue" id="10_pvhat"]
-[ext_resource type="Script" uid="uid://bjs43hlt5lkq8" path="res://scenes/quests/story_quests/threadcraft/1_threadcraft_find/lanzador_flechas.gd" id="11_qi7il"]
+[ext_resource type="Resource" uid="uid://d2fovavr24m7j" path="res://scenes/quests/story_quests/threadcraft/2_threadcraft_survive/2_threadcraft_survive/threadcraft_dialoque1.dialogue" id="10_pvhat"]
+[ext_resource type="Script" uid="uid://bjs43hlt5lkq8" path="res://scenes/quests/story_quests/threadcraft/2_threadcraft_survive/lanzador_flechas.gd" id="11_qi7il"]
 [ext_resource type="PackedScene" uid="uid://l6qd6gr6uhlw" path="res://scenes/quests/story_quests/threadcraft/FlechaNueva.tscn" id="12_v3l3g"]
 [ext_resource type="AudioStream" uid="uid://ur0gastvvxe0" path="res://scenes/quests/story_quests/threadcraft/assets/music/8BitCave.wav" id="13_r5ho4"]
 
@@ -210,7 +210,6 @@ autostart = true
 position = Vector2(-703, 514)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha"]
 wait_time = 2.0
@@ -220,7 +219,6 @@ autostart = true
 position = Vector2(0, 383)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha/lanzadorFlechas6"]
 wait_time = 2.0
@@ -230,7 +228,6 @@ autostart = true
 position = Vector2(0, 255)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha/lanzadorFlechas7"]
 wait_time = 2.0
@@ -240,7 +237,6 @@ autostart = true
 position = Vector2(514, -1)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha/lanzadorFlechas8"]
 wait_time = 2.0
@@ -250,7 +246,6 @@ autostart = true
 position = Vector2(0, 192)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha/lanzadorFlechas9"]
 wait_time = 2.0
@@ -260,7 +255,6 @@ autostart = true
 position = Vector2(-1, -257)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha/lanzadorFlechas10"]
 wait_time = 2.0
@@ -270,7 +264,6 @@ autostart = true
 position = Vector2(769, 189)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha/lanzadorFlechas2"]
 wait_time = 2.0
@@ -280,7 +273,6 @@ autostart = true
 position = Vector2(767, -129)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha/lanzadorFlechas3"]
 wait_time = 2.0
@@ -290,7 +282,6 @@ autostart = true
 position = Vector2(1540, 386)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha/lanzadorFlechas4"]
 wait_time = 2.0
@@ -300,7 +291,6 @@ autostart = true
 position = Vector2(1664, 255)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha/lanzadorFlechas5"]
 wait_time = 2.0
@@ -310,7 +300,6 @@ autostart = true
 position = Vector2(1343, -131)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha/lanzadorFlechas11"]
 wait_time = 2.0
@@ -320,7 +309,6 @@ autostart = true
 position = Vector2(1793, 644)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(-1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_Izquierda"]
 wait_time = 2.0
@@ -330,7 +318,6 @@ autostart = true
 position = Vector2(-1, 191)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(-1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_Izquierda/lanzadorFlechas6"]
 wait_time = 2.0
@@ -340,7 +327,6 @@ autostart = true
 position = Vector2(-1, 254)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(-1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_Izquierda/lanzadorFlechas7"]
 wait_time = 2.0
@@ -350,7 +336,6 @@ autostart = true
 position = Vector2(0, 320)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(-1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_Izquierda/lanzadorFlechas8"]
 wait_time = 2.0
@@ -360,7 +345,6 @@ autostart = true
 position = Vector2(-575, 125)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(-1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_Izquierda/lanzadorFlechas9"]
 wait_time = 2.0
@@ -370,7 +354,6 @@ autostart = true
 position = Vector2(-1, -130)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(-1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_Izquierda/lanzadorFlechas10"]
 wait_time = 2.0
@@ -380,7 +363,6 @@ autostart = true
 position = Vector2(-896, -8)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(-1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_Izquierda/lanzadorFlechas11"]
 wait_time = 2.0
@@ -390,7 +372,6 @@ autostart = true
 position = Vector2(-1345, -517)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(-1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_Izquierda/lanzadorFlechas12"]
 wait_time = 2.0
@@ -400,7 +381,6 @@ autostart = true
 position = Vector2(-1345, -322)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(-1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_Izquierda/lanzadorFlechas13"]
 wait_time = 2.0
@@ -410,7 +390,6 @@ autostart = true
 position = Vector2(-448, -451)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(-1, 0)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_Izquierda/lanzadorFlechas14"]
 wait_time = 2.0
@@ -420,7 +399,6 @@ autostart = true
 position = Vector2(-64, 1024)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(0, -1)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba"]
 wait_time = 2.0
@@ -430,7 +408,6 @@ autostart = true
 position = Vector2(-511, 1)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(0, -1)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba/lanzadorFlechas2"]
 wait_time = 2.0
@@ -440,7 +417,6 @@ autostart = true
 position = Vector2(-576, 1)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(0, -1)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba/lanzadorFlechas3"]
 wait_time = 2.0
@@ -450,7 +426,6 @@ autostart = true
 position = Vector2(192, -255)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(0, -1)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba/lanzadorFlechas4"]
 wait_time = 2.0
@@ -460,7 +435,6 @@ autostart = true
 position = Vector2(385, -256)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(0, -1)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba/lanzadorFlechas5"]
 wait_time = 2.0
@@ -470,7 +444,6 @@ autostart = true
 position = Vector2(256, -254)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(0, -1)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba/lanzadorFlechas6"]
 wait_time = 2.0
@@ -480,7 +453,6 @@ autostart = true
 position = Vector2(638, -9)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(0, -1)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba/lanzadorFlechas6/lanzadorFlechas3"]
 wait_time = 2.0
@@ -490,7 +462,6 @@ autostart = true
 position = Vector2(-448, 0)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(0, -1)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba/lanzadorFlechas7"]
 wait_time = 2.0
@@ -500,7 +471,6 @@ autostart = true
 position = Vector2(-383, 0)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(0, -1)
 
 [node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba/lanzadorFlechas8"]
 wait_time = 2.0
