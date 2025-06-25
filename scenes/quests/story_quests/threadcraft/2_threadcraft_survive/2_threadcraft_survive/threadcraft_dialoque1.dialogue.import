@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d2fovavr24m7j"
+path="res://.godot/imported/threadcraft_dialoque1.dialogue-f4c5402d1f7982d36120e7c7549c9020.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/threadcraft/2_threadcraft_survive/2_threadcraft_survive/threadcraft_dialoque1.dialogue"
+dest_files=["res://.godot/imported/threadcraft_dialoque1.dialogue-f4c5402d1f7982d36120e7c7549c9020.tres"]
+
+[params]
+
+defaults=true

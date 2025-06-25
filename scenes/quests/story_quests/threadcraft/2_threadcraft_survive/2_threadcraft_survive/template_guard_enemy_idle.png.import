@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkx8grad73eqc"
-path="res://.godot/imported/espadaWalk.png-37bc38ab5e74d43a6474c4f46c870fc0.ctex"
+uid="uid://bsoe12d7pq2or"
+path="res://.godot/imported/template_guard_enemy_idle.png-65a01d1ad2e98200cde58d49cc0ec28d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/threadcraft/3_threadcraft_bossBattle/espadaWalk.png"
-dest_files=["res://.godot/imported/espadaWalk.png-37bc38ab5e74d43a6474c4f46c870fc0.ctex"]
+source_file="res://scenes/quests/story_quests/threadcraft/2_threadcraft_survive/2_threadcraft_survive/template_guard_enemy_idle.png"
+dest_files=["res://.godot/imported/template_guard_enemy_idle.png-65a01d1ad2e98200cde58d49cc0ec28d.ctex"]
 
 [params]
 
