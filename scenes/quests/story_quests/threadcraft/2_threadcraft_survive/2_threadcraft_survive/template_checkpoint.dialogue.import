@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bg18wm4vk0vpo"
+path="res://.godot/imported/template_checkpoint.dialogue-865bc097b3619cbadf95c5f8c3747e2b.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/threadcraft/2_threadcraft_survive/2_threadcraft_survive/template_checkpoint.dialogue"
+dest_files=["res://.godot/imported/template_checkpoint.dialogue-865bc097b3619cbadf95c5f8c3747e2b.tres"]
+
+[params]
+
+defaults=true
