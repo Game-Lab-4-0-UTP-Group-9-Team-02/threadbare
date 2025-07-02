@@ -1,12 +1,14 @@
-[gd_scene load_steps=15 format=4 uid="uid://c5smuyflby4ca"]
+[gd_scene load_steps=45 format=4 uid="uid://c5smuyflby4ca"]
 
 [ext_resource type="Script" uid="uid://b1w4b3byvg12t" path="res://scenes/quests/story_quests/threadcraft/1_threadcraft_find/threadcraft_stealth.gd" id="1_cpi8a"]
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="1_kajil"]
 [ext_resource type="Texture2D" uid="uid://boeaxk35yjpwl" path="res://scenes/game_elements/props/door/components/door_closed.png" id="2_yv0au"]
 [ext_resource type="PackedScene" uid="uid://2rbpl811wlv1" path="res://scenes/game_elements/props/background_music/background_music.tscn" id="3_1haig"]
-[ext_resource type="Texture2D" uid="uid://0njcikmjnnlw" path="res://scenes/quests/story_quests/threadcraft/assets/mineral raro (nueva espada).png" id="3_cpi8a"]
 [ext_resource type="Script" uid="uid://ccna2t1gt5ot7" path="res://scenes/quests/story_quests/threadcraft/1_threadcraft_find/area_2d.gd" id="5_1haig"]
+[ext_resource type="Texture2D" uid="uid://bs1yfkdultdx4" path="res://scenes/quests/story_quests/threadcraft/assets/espadaTrono.png" id="5_kajil"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="7_p34jg"]
+[ext_resource type="Texture2D" uid="uid://dcbfdoah54f7e" path="res://scenes/quests/story_quests/threadcraft/assets/animated_torch.png" id="7_yv0au"]
+[ext_resource type="Texture2D" uid="uid://bjakp6o3lhvcr" path="res://scenes/quests/story_quests/threadcraft/assets/Fire.png" id="8_cpi8a"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="8_jbyfl"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="9_to386"]
 [ext_resource type="Resource" uid="uid://d2fovavr24m7j" path="res://scenes/quests/story_quests/threadcraft/1_threadcraft_find/threadcraft_stealth_components/threadcraft_dialoque1.dialogue" id="10_pvhat"]
@@ -14,8 +16,203 @@
 [ext_resource type="PackedScene" uid="uid://l6qd6gr6uhlw" path="res://scenes/quests/story_quests/threadcraft/FlechaNueva.tscn" id="12_v3l3g"]
 [ext_resource type="AudioStream" uid="uid://ur0gastvvxe0" path="res://scenes/quests/story_quests/threadcraft/assets/music/8BitCave.wav" id="13_r5ho4"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_cpi8a"]
+atlas = ExtResource("7_yv0au")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1haig"]
+atlas = ExtResource("7_yv0au")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xlcv"]
+atlas = ExtResource("7_yv0au")
+region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bmtd1"]
+atlas = ExtResource("7_yv0au")
+region = Rect2(96, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p34jg"]
+atlas = ExtResource("7_yv0au")
+region = Rect2(128, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbyfl"]
+atlas = ExtResource("7_yv0au")
+region = Rect2(160, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_to386"]
+atlas = ExtResource("7_yv0au")
+region = Rect2(192, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvhat"]
+atlas = ExtResource("7_yv0au")
+region = Rect2(224, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qi7il"]
+atlas = ExtResource("7_yv0au")
+region = Rect2(256, 0, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pvhat"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cpi8a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1haig")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xlcv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bmtd1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p34jg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbyfl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_to386")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvhat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qi7il")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_yv0au"]
+offsets = PackedFloat32Array(0, 0.724936)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cpi8a"]
+gradient = SubResource("Gradient_yv0au")
+fill = 1
+fill_from = Vector2(0.495726, 0.538462)
+fill_to = Vector2(0, 0)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bmtd1"]
-size = Vector2(20.0969, 72.6973)
+size = Vector2(136.261, 373.073)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3l3g"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5ho4"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qp4pn"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x304s"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ol01q"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kae2g"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u01se"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_umjan"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3l3g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5ho4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qp4pn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x304s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ol01q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kae2g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u01se")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjgw3"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdysv"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrj6l"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ja05h"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f5203"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgp6b"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxmfu"]
+atlas = ExtResource("8_cpi8a")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3gveu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjgw3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdysv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrj6l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ja05h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f5203")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dgp6b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxmfu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="StealthTemplateLevel" type="Node2D" groups=["jugador"]]
 y_sort_enabled = true
@@ -24,24 +221,670 @@ script = ExtResource("1_cpi8a")
 [node name="BackgroundMusic" parent="." instance=ExtResource("3_1haig")]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0.481789, 0.48179, 0.481789, 1)
+color = Color(0.601222, 0.601224, 0.601222, 1)
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 y_sort_enabled = true
 
+[node name="torches" type="Node" parent="TileMapLayers"]
+
+[node name="torch7" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(1133, 737)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch7"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(300, 725)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch8" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(1135, 541)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch8"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch9" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(1133, 348)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch9"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch10" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(933, 605)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch10"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch11" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(1384, 866)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch11"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch12" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(1378, 544)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch12"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch13" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(1631, 478)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch13"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch14" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(1890, 609)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch14"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch15" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(1890, 872)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch15"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch16" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(1309, 1248)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch16"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch17" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(1568, 1183)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch17"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch18" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2082, 758)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch18"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch19" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2145, 758)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch19"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch20" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2209, 758)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch20"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch21" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2466, 758)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch21"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch22" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2402, 758)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch22"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch23" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2128, 675)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch23"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch42" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2128, 612)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch42"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch43" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2128, 552)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch43"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch44" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2128, 492)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch44"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch45" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2128, 433)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch45"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch46" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2128, 372)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch46"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch24" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2176, 675)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch24"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch25" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2225, 675)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch25"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch26" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2381, 675)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch26"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch27" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2432, 675)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch27"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch28" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2481, 675)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch28"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch29" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2481, 612)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch29"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch30" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2481, 552)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch30"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch31" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2481, 491)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch31"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch32" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2481, 433)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch32"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch33" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2481, 371)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch33"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch34" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2481, 309)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch34"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch35" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2433, 309)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch35"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch36" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2381, 309)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch36"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch37" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2327, 309)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch37"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch38" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2279, 309)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch38"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch39" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2230, 309)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch39"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch40" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2179, 309)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch40"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch41" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(2127, 309)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch41"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch4" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(300, 862)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch4"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch5" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(547, 925)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch5"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch6" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(802, 925)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch6"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch3" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(304, 343)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.34329
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch3"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="torch2" type="AnimatedSprite2D" parent="TileMapLayers/torches"]
+position = Vector2(80, 344)
+scale = Vector2(1.47755, 0.990235)
+sprite_frames = SubResource("SpriteFrames_pvhat")
+autoplay = "default"
+frame_progress = 0.725845
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/torches/torch2"]
+position = Vector2(-0.676877, -6.05914)
+scale = Vector2(-0.15276, 0.250036)
+color = Color(1, 0.247059, 0.184314, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
 [node name="Stone" type="TileMapLayer" parent="TileMapLayers"]
 position = Vector2(0, 3)
-tile_map_data = PackedByteArray("AAAFAAMABAAAAAEAAAAGAAMABAABAAAAAAAHAAMABAABAAAAAAAIAAMABAABAAAAAAAJAAMABAABAAAAAAAKAAMABAABAAAAAAALAAMABAABAAQAAAAMAAMABAABAAQAAAANAAMABAABAAAAAAAOAAMABAABAAAAAAAPAAMABAABAAAAAAAdAAMABAABAAAAAAAcAAMABAABAAAAAAAbAAMABAABAAAAAAAaAAMABAABAAAAAAAZAAMABAABAAAAAAAYAAMABAABAAAAAAAXAAMABAABAAAAAAAWAAMABAABAAAAAAAVAAMABAABAAAAAAAUAAMABAABAAAAAAATAAMABAABAAAAAAASAAMABAABAAAAAAARAAMABAABAAAAAAAQAAMABAABAAAAAAAgABQABAAAAAIAAAAhABQABAAAAAIAAAAiABQABAAAAAIAAAAjABQABAAAAAIAAAAkABQABAAAAAIAAAAnABMABAACAAIAAAAlABQABAAAAAIAAAAmABQABAAAAAIAAAAnABQABAAAAAIAAAAnABIABAACAAEAAAAnAA8ABAACAAEAAAAnABAABAABAAIAAAAnABEABAACAAAAAAAnAA4ABAACAAEAAAAnAA0ABAACAAEAAAAnAAwABAACAAEAAAAnAAsABAACAAEAAAAnAAoABAACAAAAAAAfAAQABAABAAUAAAAiAAQABAABAAMAAAAjAAQABAABAAUAAAAkAAQABAABAAMAAAAlAAQABAABAAMAAAAmAAQABAABAAUAAAAeAAMABAABAAEAAAAfAAMABAABAAIAAAAgAAMABAABAAIAAAAhAAMABAABAAIAAAAiAAMABAABAAIAAAAjAAMABAABAAIAAAAkAAMABAABAAIAAAAlAAMABAABAAIAAAAmAAMABAABAAIAAAAnAAMABAABAAIAAAAAAAoABAABAAAAAAAAAAkABAADAAEAAAAAAAgABAACAAEAAAAAAAYABAACAAEAAAAEAAMABAABAAAAAAADAAMABAABAAIAAAACAAMABAABAAEAAAABAAMABAABAAAAAAAAAAMABAABAAAAAAAAAAQABAABAAAAAAAAAAUABAADAAEAAAABAAQABAABAAMAAAACAAQABAABAAMAAAADAAQABAABAAUAAAAEAAQABAABAAMAAAAhAAQABAABAAMAAAAgAAQABAABAAUAAAAnAAQABAAAAAIAAAAnAAUABAAAAAIAAAAnAAYABAAAAAIAAAAnAAcABAAAAAIAAAAnAAgABAABAAIAAAAnAAkABAABAAIAAAAAAAcABAACAAIAAAAAABQABAAAAAIAAAACABQABAAAAAIAAAABABQABAAAAAIAAAADABQABAAAAAIAAAAEABQABAAAAAIAAAAGABQABAAAAAIAAAAFABQABAAAAAIAAAAJABQABAAAAAIAAAAIABQABAAAAAIAAAAHABQABAAAAAIAAAAMABQABAAAAAIAAAALABQABAAAAAIAAAAKABQABAAAAAIAAAAPABQABAAAAAIAAAAOABQABAAAAAIAAAANABQABAAAAAIAAAARABQABAAAAAIAAAAQABQABAAAAAIAAAATABQABAAAAAIAAAASABQABAAAAAIAAAAVABQABAAAAAIAAAAUABQABAAAAAIAAAAXABQABAAAAAIAAAAWABQABAAAAAIAAAAZABQABAAAAAIAAAAYABQABAAAAAIAAAAcABQABAAAAAIAAAAbABQABAAAAAIAAAAaABQABAAAAAIAAAAdABQABAAAAAIAAAAeABQABAAAAAQAAAAfABQABAAAAAIAAAAAAAsABAADAAEAAAAAAAwABAADAAEAAAAAAA0ABAADAAEAAAAAAA4ABAADAAEAAAAAAA8ABAADAAEAAAAAABAABAADAAEAAAAAABEABAADAAEAAAAAABIABAADAAEAAAAAABMABAADAAIAAAALAAQABAABAAMAAAAeAAQABAABAAMAAAAdAAQABAABAAMAAAAcAAQABAABAAMAAAAbAAQABAABAAMAAAAaAAQABAABAAMAAAAZAAQABAABAAMAAAAYAAQABAABAAMAAAAXAAQABAABAAMAAAAWAAQABAABAAMAAAANAAQABAABAAMAAAAKAAQABAABAAMAAAAJAAQABAABAAMAAAAIAAQABAABAAMAAAAHAAQABAABAAMAAAAGAAQABAABAAMAAAAFAAQABAABAAMAAAAgAAUABAABAAEAAAAgAAYABAABAAEAAAAgAAcABAABAAEAAAAgAAgABAABAAEAAAAgAAkABAABAAEAAAAgAAoABAABAAEAAAAgAAsABAABAAIAAAAhAAsABAABAAIAAAAiAAsABAABAAIAAAAlAAsABAABAAIAAAAmAAsABAABAAIAAAAQAAQABAABAAMAAAARAAQABAABAAMAAAASAAQABAABAAMAAAATAAQABAABAAMAAAAUAAQABAABAAMAAAAVAAQABAABAAMAAAAOAAQABAABAAMAAAAMAAQABAABAAMAAAAPAAQABAABAAMAAAAFAAUABAABAAEAAAAFAAYABAABAAEAAAAFAAcABAABAAEAAAAFAAgABAABAAEAAAAFAAkABAABAAEAAAAFAAoABAABAAEAAAAFAAsABAABAAEAAAAEAAoABAABAAIAAAADAAoABAABAAIAAAADAA4ABAABAAIAAAAEAA4ABAABAAIAAAAGABAABAABAAIAAAAHABAABAABAAIAAAAIABAABAABAAQAAAAIAA8ABAABAAQAAAAIAA4ABAABAAQAAAAIAA0ABAABAAQAAAAIAAwABAABAAQAAAAIAAsABAABAAQAAAAIAAoABAABAAQAAAAIAAkABAABAAQAAAAIAAgABAABAAQAAAAIAAcABAABAAIAAAAMABAABAABAAIAAAAMAA8ABAABAAEAAAAMAA4ABAABAAEAAAAMAA0ABAABAAEAAAAMAAwABAABAAEAAAAMAAsABAABAAEAAAAMAAoABAABAAEAAAAMAAkABAABAAEAAAAMAAgABAABAAEAAAAMAAcABAABAAEAAAANABAABAABAAIAAAAOABAABAABAAIAAAAPABAABAABAAIAAAAQABAABAABAAIAAAARABAABAABAAIAAAASABAABAABAAIAAAATABAABAABAAIAAAAUABAABAABAAIAAAAVABAABAABAAIAAAAWABAABAABAAIAAAAXABAABAABAAIAAAASAAcABAABAAEAAAASAAgABAABAAEAAAASAAkABAABAAEAAAASAAoABAABAAEAAAASAAsABAABAAEAAAASAAwABAABAAEAAAASAAUABAABAAEAAAASAAYABAABAAEAAAANAAkABAABAAIAAAAOAAkABAABAAIAAAAQAAwABAABAAIAAAARAAwABAABAAIAAAASAA0ABAABAAIAAAATAA0ABAABAAIAAAAUAA0ABAABAAEAAAAVAA0ABAABAAQAAAAVAAwABAABAAQAAAAVAAsABAABAAQAAAAVAAoABAABAAQAAAAVAAkABAABAAQAAAAVAAgABAABAAQAAAAYABAABAABAAIAAAAUABMABAAAAAEAAAAYABEABAABAAAAAAAZABAABAABAAIAAAAaABAABAACAAIAAAAeABAABAAAAAEAAAAVAAcABAABAAQAAAAVAAYABAABAAQAAAAVAAUABAABAAIAAAAZAA8ABAAAAAEAAAAZAA4ABAABAAEAAAAZAA0ABAABAAEAAAAZAAwABAABAAEAAAAZAAsABAABAAEAAAAZAAoABAABAAEAAAAZAAkABAABAAAAAAAZAAgABAABAAQAAAAfABAABAABAAIAAAAgABAABAABAAIAAAAhABAABAABAAIAAAAiABAABAABAAEAAAAHAAsABAABAAIAAAAJAAsABAABAAIAAAALAA0ABAABAAIAAAAUAA4ABAABAAIAAAAFAAwABAABAAEAAAAFAA0ABAABAAEAAAAFAA4ABAABAAEAAAAFAA8ABAABAAEAAAAFABAABAABAAIAAAAYABIABAABAAIAAAAZAAcABAABAAIAAAAfAAkABAABAAIAAAAeAAkABAABAAIAAAAdAAkABAABAAEAAAAdAAoABAABAAEAAAAdAAsABAABAAEAAAAdAAwABAABAAEAAAAdAA0ABAABAAIAAAAjABAABAABAAIAAAAkABAABAABAAIAAAAlABAABAABAAIAAAAmABAABAABAAIAAAAiABEABAABAAIAAAA=")
+tile_map_data = PackedByteArray("AAAFAAMABAAAAAEAAAAGAAMABAABAAAAAAAHAAMABAABAAAAAAAIAAMABAABAAAAAAAJAAMABAABAAAAAAAKAAMABAABAAAAAAALAAMABAABAAQAAAAMAAMABAABAAQAAAANAAMABAABAAAAAAAOAAMABAABAAAAAAAPAAMABAABAAAAAAAdAAMABAABAAAAAAAcAAMABAABAAAAAAAbAAMABAABAAAAAAAaAAMABAABAAAAAAAZAAMABAABAAAAAAAYAAMABAABAAAAAAAXAAMABAABAAAAAAAWAAMABAABAAAAAAAVAAMABAABAAAAAAAUAAMABAABAAAAAAATAAMABAABAAAAAAASAAMABAABAAAAAAARAAMABAABAAAAAAAQAAMABAABAAAAAAAgABQABAAAAAIAAAAhABQABAAAAAIAAAAiABQABAAAAAIAAAAjABQABAAAAAIAAAAkABQABAAAAAIAAAAnABMABAACAAIAAAAlABQABAAAAAIAAAAmABQABAAAAAIAAAAnABQABAAAAAIAAAAnABIABAACAAEAAAAnAA8ABAACAAEAAAAnABAABAABAAIAAAAnABEABAACAAAAAAAnAA4ABAACAAEAAAAnAA0ABAACAAEAAAAnAAwABAACAAEAAAAnAAsABAACAAEAAAAnAAoABAACAAAAAAAfAAQABAABAAUAAAAeAAMABAABAAEAAAAfAAMABAABAAIAAAAgAAMABAABAAIAAAAhAAMABAABAAIAAAAiAAMABAABAAIAAAAjAAMABAABAAIAAAAkAAMABAABAAIAAAAlAAMABAABAAIAAAAmAAMABAABAAIAAAAnAAMABAABAAIAAAAAAAoABAABAAAAAAAAAAkABAADAAEAAAAAAAgABAACAAEAAAAAAAYABAACAAEAAAAEAAMABAABAAAAAAADAAMABAABAAIAAAACAAMABAABAAEAAAABAAMABAABAAAAAAAAAAMABAABAAAAAAAAAAQABAABAAAAAAAAAAUABAADAAEAAAABAAQABAABAAMAAAACAAQABAABAAMAAAADAAQABAABAAUAAAAEAAQABAABAAMAAAAgAAQABAABAAUAAAAnAAQABAAAAAIAAAAnAAUABAAAAAIAAAAnAAYABAAAAAIAAAAnAAcABAAAAAIAAAAnAAgABAABAAIAAAAnAAkABAABAAIAAAAAAAcABAACAAIAAAAAABQABAAAAAIAAAACABQABAAAAAIAAAABABQABAAAAAIAAAADABQABAAAAAIAAAAEABQABAAAAAIAAAAGABQABAAAAAIAAAAFABQABAAAAAIAAAAJABQABAAAAAIAAAAIABQABAAAAAIAAAAHABQABAAAAAIAAAAMABQABAAAAAIAAAALABQABAAAAAIAAAAKABQABAAAAAIAAAAPABQABAAAAAIAAAAOABQABAAAAAIAAAANABQABAAAAAIAAAARABQABAAAAAIAAAAQABQABAAAAAIAAAATABQABAAAAAIAAAASABQABAAAAAIAAAAVABQABAAAAAIAAAAUABQABAAAAAIAAAAXABQABAAAAAIAAAAWABQABAAAAAIAAAAZABQABAAAAAIAAAAYABQABAAAAAIAAAAcABQABAAAAAIAAAAbABQABAAAAAIAAAAaABQABAAAAAIAAAAdABQABAAAAAIAAAAeABQABAAAAAQAAAAfABQABAAAAAIAAAAAAAsABAADAAEAAAAAAAwABAADAAEAAAAAAA0ABAADAAEAAAAAAA4ABAADAAEAAAAAAA8ABAADAAEAAAAAABAABAADAAEAAAAAABEABAADAAEAAAAAABIABAADAAEAAAAAABMABAADAAIAAAALAAQABAABAAMAAAAeAAQABAABAAMAAAAdAAQABAABAAMAAAAcAAQABAABAAMAAAAbAAQABAABAAMAAAAaAAQABAABAAMAAAAZAAQABAABAAMAAAAYAAQABAABAAMAAAAXAAQABAABAAMAAAAWAAQABAABAAMAAAANAAQABAABAAMAAAAKAAQABAABAAMAAAAJAAQABAABAAMAAAAIAAQABAABAAMAAAAHAAQABAABAAMAAAAGAAQABAABAAMAAAAFAAQABAABAAMAAAAgAAUABAABAAEAAAAgAAYABAABAAEAAAAgAAcABAABAAEAAAAgAAgABAABAAEAAAAgAAkABAABAAEAAAAgAAoABAABAAEAAAAgAAsABAABAAIAAAAhAAsABAABAAIAAAAiAAsABAABAAIAAAAlAAsABAABAAIAAAAmAAsABAABAAIAAAAQAAQABAABAAMAAAARAAQABAABAAMAAAASAAQABAABAAMAAAATAAQABAABAAMAAAAUAAQABAABAAMAAAAVAAQABAABAAMAAAAOAAQABAABAAMAAAAMAAQABAABAAMAAAAPAAQABAABAAMAAAAFAAUABAABAAEAAAAFAAYABAABAAEAAAAFAAcABAABAAEAAAAFAAgABAABAAEAAAAFAAkABAABAAEAAAAFAAoABAABAAEAAAAFAAsABAABAAEAAAAEAAoABAABAAIAAAADAAoABAABAAIAAAADAA4ABAABAAIAAAAEAA4ABAABAAIAAAAGABAABAABAAIAAAAHABAABAABAAIAAAAIABAABAABAAQAAAAIAA8ABAABAAQAAAAIAA4ABAABAAQAAAAIAA0ABAABAAQAAAAIAAwABAABAAQAAAAIAAsABAABAAQAAAAIAAoABAABAAQAAAAIAAkABAABAAQAAAAIAAgABAABAAQAAAAIAAcABAABAAIAAAAMABAABAABAAIAAAAMAA8ABAABAAEAAAAMAA4ABAABAAEAAAAMAA0ABAABAAEAAAAMAAwABAABAAEAAAAMAAsABAABAAEAAAAMAAoABAABAAEAAAAMAAkABAABAAEAAAAMAAgABAABAAEAAAAMAAcABAABAAEAAAANABAABAABAAIAAAAOABAABAABAAIAAAAPABAABAABAAIAAAAQABAABAABAAIAAAARABAABAABAAIAAAASABAABAABAAIAAAATABAABAABAAIAAAAUABAABAABAAIAAAAVABAABAABAAIAAAAWABAABAABAAIAAAAXABAABAABAAIAAAASAAcABAABAAEAAAASAAgABAABAAEAAAASAAkABAABAAEAAAASAAoABAABAAEAAAASAAsABAABAAEAAAASAAwABAABAAEAAAASAAUABAABAAEAAAASAAYABAABAAEAAAANAAkABAABAAIAAAAOAAkABAABAAIAAAAQAAwABAABAAIAAAARAAwABAABAAIAAAASAA0ABAABAAIAAAATAA0ABAABAAIAAAAUAA0ABAABAAEAAAAVAA0ABAABAAQAAAAVAAwABAABAAQAAAAVAAsABAABAAQAAAAVAAoABAABAAQAAAAVAAkABAABAAQAAAAVAAgABAABAAQAAAAYABAABAABAAIAAAAUABMABAAAAAEAAAAYABEABAABAAAAAAAZABAABAABAAIAAAAaABAABAACAAIAAAAeABAABAAAAAEAAAAVAAcABAABAAQAAAAVAAYABAABAAQAAAAVAAUABAABAAIAAAAZAA8ABAAAAAEAAAAZAA4ABAABAAEAAAAZAA0ABAABAAEAAAAZAAwABAABAAEAAAAZAAsABAABAAEAAAAZAAoABAABAAEAAAAZAAkABAABAAAAAAAZAAgABAABAAQAAAAfABAABAABAAIAAAAgABAABAABAAIAAAAhABAABAABAAIAAAAiABAABAABAAEAAAAHAAsABAABAAIAAAAJAAsABAABAAIAAAALAA0ABAABAAIAAAAUAA4ABAABAAIAAAAFAAwABAABAAEAAAAFAA0ABAABAAEAAAAFAA4ABAABAAEAAAAFAA8ABAABAAEAAAAFABAABAABAAIAAAAYABIABAABAAIAAAAZAAcABAABAAIAAAAfAAkABAABAAIAAAAeAAkABAABAAIAAAAdAAkABAABAAEAAAAdAAoABAABAAEAAAAdAAsABAABAAEAAAAdAAwABAABAAEAAAAdAA0ABAABAAIAAAAjABAABAABAAIAAAAkABAABAABAAIAAAAlABAABAABAAIAAAAmABAABAABAAIAAAAiABEABAABAAIAAAAhAAQABAABAAMAAAAiAAQABAABAAMAAAAjAAQABAABAAMAAAAkAAQABAABAAMAAAAlAAQABAABAAMAAAAmAAQABAABAAMAAAA=")
 tile_set = ExtResource("1_kajil")
 
 [node name="Stone3" type="TileMapLayer" parent="TileMapLayers"]
 position = Vector2(0, 3)
-tile_map_data = PackedByteArray("AAAFAAMABAABAAMAAAAGAAMABAABAAMAAAAHAAMABAABAAMAAAAIAAMABAABAAMAAAAJAAMABAABAAMAAAAKAAMABAABAAMAAAALAAMABAABAAMAAAAMAAMABAABAAMAAAANAAMABAABAAMAAAAOAAMABAABAAMAAAAPAAMABAABAAMAAAAdAAMABAABAAMAAAAcAAMABAABAAMAAAAbAAMABAABAAMAAAAaAAMABAABAAMAAAAZAAMABAABAAMAAAAYAAMABAABAAMAAAAXAAMABAABAAMAAAAWAAMABAABAAMAAAAVAAMABAABAAMAAAAUAAMABAABAAMAAAATAAMABAABAAMAAAASAAMABAABAAMAAAARAAMABAABAAMAAAAQAAMABAABAAMAAAAeAAMABAABAAMAAAAfAAMABAABAAMAAAAgAAMABAABAAMAAAAhAAMABAABAAMAAAAiAAMABAABAAMAAAAjAAMABAABAAMAAAAkAAMABAABAAMAAAAlAAMABAABAAMAAAAmAAMABAABAAMAAAAnAAMABAABAAMAAAAEAAMABAABAAMAAAADAAMABAABAAMAAAACAAMABAABAAMAAAABAAMABAABAAMAAAAAAAMABAABAAMAAAAMAAcABAABAAMAAAAMAAgABAABAAMAAAAMAAkABAABAAMAAAANAAkABAABAAMAAAAMAAoABAABAAMAAAAMAAsABAABAAMAAAAOAAkABAABAAMAAAAMAAwABAABAAMAAAALAA0ABAABAAMAAAAMAA0ABAABAAMAAAAMAA4ABAABAAMAAAAMAA8ABAABAAMAAAAMABAABAABAAMAAAANABAABAABAAMAAAAIABAABAABAAMAAAAOABAABAABAAMAAAAPABAABAABAAMAAAAQABAABAABAAMAAAARABAABAABAAMAAAASABAABAABAAMAAAATABAABAABAAMAAAAUABAABAABAAMAAAAZAA8ABAABAAMAAAAZAA4ABAABAAMAAAAZABAABAABAAMAAAAaABAABAABAAMAAAAYABAABAABAAMAAAAYABEABAABAAMAAAAXABAABAABAAMAAAAYABIABAABAAMAAAAWABAABAABAAMAAAAVABAABAABAAMAAAAUAA4ABAABAAMAAAAUAA0ABAABAAMAAAAVAA0ABAABAAMAAAATAA0ABAABAAMAAAAVAAwABAABAAMAAAAVAAsABAABAAMAAAAVAAoABAABAAMAAAAVAAkABAABAAMAAAAVAAgABAABAAMAAAAVAAcABAABAAMAAAAVAAYABAABAAMAAAAVAAUABAABAAMAAAASAAUABAABAAMAAAASAAYABAABAAMAAAASAAcABAABAAMAAAASAAgABAABAAMAAAASAAkABAABAAMAAAASAAoABAABAAMAAAASAAsABAABAAMAAAASAAwABAABAAMAAAARAAwABAABAAMAAAASAA0ABAABAAMAAAAQAAwABAABAAMAAAAUABMABAABAAMAAAAZAA0ABAABAAMAAAAZAAwABAABAAMAAAAZAAsABAABAAMAAAAZAAoABAABAAMAAAAZAAkABAABAAMAAAAZAAgABAABAAMAAAAZAAcABAABAAMAAAAdAAkABAABAAMAAAAeAAkABAABAAMAAAAfAAkABAABAAMAAAAdAAwABAABAAMAAAAdAA0ABAABAAMAAAAdAAsABAABAAMAAAAdAAoABAABAAMAAAAgAAoABAABAAMAAAAgAAkABAABAAMAAAAgAAgABAABAAMAAAAgAAcABAABAAMAAAAgAAYABAABAAMAAAAgAAUABAADAAMAAAAgAAsABAABAAMAAAAhAAsABAABAAMAAAAiAAsABAABAAMAAAAlAAsABAABAAMAAAAmAAsABAABAAMAAAAlABAABAABAAMAAAAmABAABAABAAMAAAAkABAABAABAAMAAAAjABAABAABAAMAAAAiABAABAABAAMAAAAhABAABAABAAMAAAAgABAABAABAAMAAAAfABAABAABAAMAAAAeABAABAABAAMAAAAiABEABAABAAMAAAAGABAABAABAAMAAAAHABAABAABAAMAAAAIAA8ABAABAAMAAAAIAA4ABAABAAMAAAAIAA0ABAABAAMAAAAIAAwABAABAAMAAAAIAAsABAABAAMAAAAJAAsABAABAAMAAAAHAAsABAABAAMAAAAIAAoABAABAAMAAAAIAAkABAABAAMAAAAIAAgABAABAAMAAAAIAAcABAABAAMAAAADAA4ABAABAAMAAAAEAA4ABAABAAMAAAADAAoABAABAAMAAAAEAAoABAABAAMAAAAFAAUABAABAAMAAAAFAAYABAABAAMAAAAFAAcABAABAAMAAAAFAAgABAABAAMAAAAFAAkABAABAAMAAAAFAAoABAABAAMAAAAFAAsABAABAAMAAAAFAAwABAABAAMAAAAFAA0ABAABAAMAAAAFAA4ABAABAAMAAAAFAA8ABAABAAMAAAAFABAABAABAAMAAAAAAAQABAABAAMAAAAAAAUABAABAAMAAAAAAAYABAABAAMAAAAAAAcABAABAAMAAAAAAAgABAABAAMAAAAAAAkABAABAAMAAAAAAAoABAABAAMAAAAAAAsABAABAAMAAAAAAAwABAABAAMAAAAAAA0ABAABAAMAAAAAAA4ABAABAAMAAAAAAA8ABAABAAMAAAAAABAABAABAAMAAAAAABEABAABAAMAAAAAABIABAABAAMAAAAAABMABAABAAMAAAAAABQABAABAAMAAAABABQABAABAAMAAAACABQABAABAAMAAAADABQABAABAAMAAAAEABQABAABAAMAAAAFABQABAABAAMAAAAGABQABAABAAMAAAAHABQABAABAAMAAAAIABQABAABAAMAAAAJABQABAABAAMAAAAKABQABAABAAMAAAALABQABAABAAMAAAAMABQABAABAAMAAAANABQABAABAAMAAAAOABQABAABAAMAAAAPABQABAABAAMAAAAQABQABAABAAMAAAARABQABAABAAMAAAASABQABAABAAMAAAATABQABAABAAMAAAAUABQABAABAAMAAAAVABQABAABAAMAAAAWABQABAABAAMAAAAXABQABAABAAMAAAAYABQABAABAAMAAAAZABQABAABAAMAAAAaABQABAABAAMAAAAbABQABAABAAMAAAAcABQABAABAAMAAAAdABQABAABAAMAAAAeABQABAABAAMAAAAfABQABAABAAMAAAAgABQABAABAAMAAAAhABQABAABAAMAAAAiABQABAABAAMAAAAjABQABAABAAMAAAAkABQABAABAAMAAAAlABQABAABAAMAAAAmABQABAABAAMAAAAnABQABAABAAMAAAAnABMABAABAAMAAAAnABIABAABAAMAAAAnABEABAABAAMAAAAnABAABAABAAMAAAAnAA8ABAABAAMAAAAnAA4ABAABAAMAAAAnAA0ABAABAAMAAAAnAAwABAABAAMAAAAnAAsABAABAAMAAAAnAAoABAABAAMAAAAnAAkABAABAAMAAAAnAAgABAABAAMAAAAnAAcABAABAAMAAAAnAAYABAABAAMAAAAnAAUABAABAAMAAAAnAAQABAABAAMAAAAmAAQABAABAAMAAAAlAAQABAABAAMAAAAkAAQABAABAAMAAAAjAAQABAABAAMAAAAiAAQABAABAAMAAAAhAAQABAABAAMAAAAgAAQABAABAAMAAAAfAAQABAABAAMAAAAeAAQABAABAAMAAAAdAAQABAABAAMAAAAcAAQABAABAAMAAAAbAAQABAABAAMAAAAaAAQABAABAAMAAAAZAAQABAABAAMAAAAYAAQABAABAAMAAAAXAAQABAABAAMAAAAWAAQABAABAAMAAAAVAAQABAABAAMAAAAUAAQABAABAAMAAAATAAQABAABAAMAAAASAAQABAABAAMAAAARAAQABAABAAMAAAAQAAQABAABAAMAAAAPAAQABAABAAMAAAAOAAQABAABAAMAAAANAAQABAABAAMAAAAMAAQABAABAAMAAAALAAQABAABAAMAAAAKAAQABAABAAMAAAAJAAQABAABAAMAAAAIAAQABAABAAMAAAAHAAQABAABAAMAAAAGAAQABAABAAMAAAAFAAQABAABAAMAAAAEAAQABAABAAMAAAADAAQABAABAAMAAAACAAQABAABAAMAAAABAAQABAABAAMAAAA=")
+tile_map_data = PackedByteArray("AAAFAAMABAABAAMAAAAGAAMABAABAAMAAAAHAAMABAABAAMAAAAIAAMABAABAAMAAAAJAAMABAABAAMAAAAKAAMABAABAAMAAAALAAMABAABAAMAAAAMAAMABAABAAMAAAANAAMABAABAAMAAAAOAAMABAABAAMAAAAPAAMABAABAAMAAAAdAAMABAABAAMAAAAcAAMABAABAAMAAAAbAAMABAABAAMAAAAaAAMABAABAAMAAAAZAAMABAABAAMAAAAYAAMABAABAAMAAAAXAAMABAABAAMAAAAWAAMABAABAAMAAAAVAAMABAABAAMAAAAUAAMABAABAAMAAAATAAMABAABAAMAAAASAAMABAABAAMAAAARAAMABAABAAMAAAAQAAMABAABAAMAAAAeAAMABAABAAMAAAAfAAMABAABAAMAAAAgAAMABAABAAMAAAAhAAMABAABAAMAAAAiAAMABAABAAMAAAAjAAMABAABAAMAAAAkAAMABAABAAMAAAAlAAMABAABAAMAAAAmAAMABAABAAMAAAAnAAMABAABAAMAAAAEAAMABAABAAMAAAADAAMABAABAAMAAAACAAMABAABAAMAAAABAAMABAABAAMAAAAAAAMABAABAAMAAAAMAAcABAABAAMAAAAMAAgABAABAAMAAAAMAAkABAABAAMAAAANAAkABAABAAMAAAAMAAoABAABAAMAAAAMAAsABAABAAMAAAAOAAkABAABAAMAAAAMAAwABAABAAMAAAALAA0ABAABAAMAAAAMAA0ABAABAAMAAAAMAA4ABAABAAMAAAAMAA8ABAABAAMAAAAMABAABAABAAMAAAANABAABAABAAMAAAAIABAABAABAAMAAAAOABAABAABAAMAAAAPABAABAABAAMAAAAQABAABAABAAMAAAARABAABAABAAMAAAASABAABAABAAMAAAATABAABAABAAMAAAAUABAABAABAAMAAAAZAA8ABAABAAMAAAAZAA4ABAABAAMAAAAZABAABAABAAMAAAAaABAABAABAAMAAAAYABAABAABAAMAAAAYABEABAABAAMAAAAXABAABAABAAMAAAAYABIABAABAAMAAAAWABAABAABAAMAAAAVABAABAABAAMAAAAUAA4ABAABAAMAAAAUAA0ABAABAAMAAAAVAA0ABAABAAMAAAATAA0ABAABAAMAAAAVAAwABAABAAMAAAAVAAsABAABAAMAAAAVAAoABAABAAMAAAAVAAkABAABAAMAAAAVAAgABAABAAMAAAAVAAcABAABAAMAAAAVAAYABAABAAMAAAAVAAUABAABAAMAAAASAAUABAABAAMAAAASAAYABAABAAMAAAASAAcABAABAAMAAAASAAgABAABAAMAAAASAAkABAABAAMAAAASAAoABAABAAMAAAASAAsABAABAAMAAAASAAwABAABAAMAAAARAAwABAABAAMAAAASAA0ABAABAAMAAAAQAAwABAABAAMAAAAUABMABAABAAMAAAAZAA0ABAABAAMAAAAZAAwABAABAAMAAAAZAAsABAABAAMAAAAZAAoABAABAAMAAAAZAAkABAABAAMAAAAZAAgABAABAAMAAAAZAAcABAABAAMAAAAdAAkABAABAAMAAAAeAAkABAABAAMAAAAfAAkABAABAAMAAAAdAAwABAABAAMAAAAdAA0ABAABAAMAAAAdAAsABAABAAMAAAAdAAoABAABAAMAAAAgAAoABAABAAMAAAAgAAkABAABAAMAAAAgAAgABAABAAMAAAAgAAcABAABAAMAAAAgAAYABAABAAMAAAAgAAUABAABAAMAAAAgAAsABAABAAMAAAAhAAsABAABAAMAAAAiAAsABAABAAMAAAAlAAsABAABAAMAAAAmAAsABAABAAMAAAAlABAABAABAAMAAAAmABAABAABAAMAAAAkABAABAABAAMAAAAjABAABAABAAMAAAAiABAABAABAAMAAAAhABAABAABAAMAAAAgABAABAABAAMAAAAfABAABAABAAMAAAAeABAABAABAAMAAAAiABEABAABAAMAAAAGABAABAABAAMAAAAHABAABAABAAMAAAAIAA8ABAABAAMAAAAIAA4ABAABAAMAAAAIAA0ABAABAAMAAAAIAAwABAABAAMAAAAIAAsABAABAAMAAAAJAAsABAABAAMAAAAHAAsABAABAAMAAAAIAAoABAABAAMAAAAIAAkABAABAAMAAAAIAAgABAABAAMAAAAIAAcABAABAAMAAAADAA4ABAABAAMAAAAEAA4ABAABAAMAAAADAAoABAABAAMAAAAEAAoABAABAAMAAAAFAAUABAABAAMAAAAFAAYABAABAAMAAAAFAAcABAABAAMAAAAFAAgABAABAAMAAAAFAAkABAABAAMAAAAFAAoABAABAAMAAAAFAAsABAABAAMAAAAFAAwABAABAAMAAAAFAA0ABAABAAMAAAAFAA4ABAABAAMAAAAFAA8ABAABAAMAAAAFABAABAABAAMAAAAAAAQABAABAAMAAAAAAAUABAABAAMAAAAAAAYABAABAAMAAAAAAAcABAABAAMAAAAAAAgABAABAAMAAAAAAAkABAABAAMAAAAAAAoABAABAAMAAAAAAAsABAABAAMAAAAAAAwABAABAAMAAAAAAA0ABAABAAMAAAAAAA4ABAABAAMAAAAAAA8ABAABAAMAAAAAABAABAABAAMAAAAAABEABAABAAMAAAAAABIABAABAAMAAAAAABMABAABAAMAAAAAABQABAABAAMAAAABABQABAABAAMAAAACABQABAABAAMAAAADABQABAABAAMAAAAEABQABAABAAMAAAAFABQABAABAAMAAAAGABQABAABAAMAAAAHABQABAABAAMAAAAIABQABAABAAMAAAAJABQABAABAAMAAAAKABQABAABAAMAAAALABQABAABAAMAAAAMABQABAABAAMAAAANABQABAABAAMAAAAOABQABAABAAMAAAAPABQABAABAAMAAAAQABQABAABAAMAAAARABQABAABAAMAAAASABQABAABAAMAAAATABQABAABAAMAAAAUABQABAABAAMAAAAVABQABAABAAMAAAAWABQABAABAAMAAAAXABQABAABAAMAAAAYABQABAABAAMAAAAZABQABAABAAMAAAAaABQABAABAAMAAAAbABQABAABAAMAAAAcABQABAABAAMAAAAdABQABAABAAMAAAAeABQABAABAAMAAAAfABQABAABAAMAAAAgABQABAABAAMAAAAhABQABAABAAMAAAAiABQABAABAAMAAAAjABQABAABAAMAAAAkABQABAABAAMAAAAlABQABAABAAMAAAAmABQABAABAAMAAAAnABQABAABAAMAAAAnABMABAABAAMAAAAnABIABAABAAMAAAAnABEABAABAAMAAAAnABAABAABAAMAAAAnAA8ABAABAAMAAAAnAA4ABAABAAMAAAAnAA0ABAABAAMAAAAnAAwABAABAAMAAAAnAAsABAABAAMAAAAnAAoABAABAAMAAAAnAAkABAABAAMAAAAnAAgABAABAAMAAAAnAAcABAABAAMAAAAnAAYABAABAAMAAAAnAAUABAABAAMAAAAnAAQABAABAAMAAAAmAAQABAABAAMAAAAlAAQABAABAAMAAAAkAAQABAABAAMAAAAjAAQABAABAAMAAAAiAAQABAABAAMAAAAhAAQABAABAAMAAAAgAAQABAABAAMAAAAfAAQABAABAAMAAAAeAAQABAABAAMAAAAdAAQABAABAAMAAAAcAAQABAABAAMAAAAbAAQABAABAAMAAAAaAAQABAABAAMAAAAZAAQABAABAAMAAAAYAAQABAABAAMAAAAXAAQABAABAAMAAAAWAAQABAABAAMAAAAVAAQABAABAAMAAAAUAAQABAABAAMAAAATAAQABAABAAMAAAASAAQABAABAAMAAAARAAQABAABAAMAAAAQAAQABAABAAMAAAAPAAQABAABAAMAAAAOAAQABAABAAMAAAANAAQABAABAAMAAAAMAAQABAABAAMAAAALAAQABAABAAMAAAAKAAQABAABAAMAAAAJAAQABAABAAMAAAAIAAQABAABAAMAAAAHAAQABAABAAMAAAAGAAQABAABAAMAAAAFAAQABAABAAMAAAAEAAQABAABAAMAAAADAAQABAABAAMAAAACAAQABAABAAMAAAABAAQABAABAAMAAAA=")
 tile_set = ExtResource("1_kajil")
 
 [node name="Stone2" type="TileMapLayer" parent="TileMapLayers" groups=["pared"]]
 position = Vector2(0, 3)
-tile_map_data = PackedByteArray("AAAGABAABAABAAMAAAAFAAgABAABAAMAAAAFAAwABAABAAMAAAAFAA8ABAABAAMAAAAFABAABAABAAMAAAAUABMABAABAAMAAAACAAQABAABAAMAAAAYABIABAABAAMAAAABAAQABAAAAAMAAAAJAAsABAABAAMAAAALAA0ABAABAAMAAAAMAAwABAABAAMAAAASAAoABAABAAMAAAANAAkABAABAAMAAAAOAAkABAABAAMAAAAQAAwABAABAAMAAAARAAwABAABAAMAAAAZAAoABAABAAMAAAAWABAABAABAAMAAAAXABAABAABAAMAAAAYABAABAABAAMAAAAZABAABAABAAMAAAAaABAABAABAAMAAAAeABAABAABAAMAAAAiABEABAABAAMAAAAYABEABAABAAMAAAAUAA4ABAABAAMAAAAdAAwABAABAAMAAAAZAA4ABAABAAMAAAAZAAcABAABAAMAAAAbABQABAABAAMAAAAcABQABAABAAMAAAAaABQABAABAAMAAAAFAAYABAABAAMAAAAHAAsABAABAAMAAAADAA4ABAABAAMAAAAEAA4ABAABAAMAAAAHABAABAABAAMAAAAIAAoABAABAAMAAAA=")
+tile_map_data = PackedByteArray("AAAGABAABAABAAMAAAAFAAgABAABAAMAAAAFAAwABAABAAMAAAAFAA8ABAABAAMAAAAFABAABAABAAMAAAAUABMABAABAAMAAAACAAQABAABAAMAAAAYABIABAABAAMAAAABAAQABAAAAAMAAAAJAAsABAABAAMAAAALAA0ABAABAAMAAAAMAAwABAABAAMAAAASAAoABAABAAMAAAANAAkABAABAAMAAAAOAAkABAABAAMAAAAQAAwABAABAAMAAAARAAwABAABAAMAAAAZAAoABAABAAMAAAAWABAABAABAAMAAAAXABAABAACAAMAAAAiABEABAABAAMAAAAYABEABAACAAMAAAAUAA4ABAABAAMAAAAdAAwABAABAAMAAAAZAAcABAABAAMAAAAbABQABAABAAMAAAAcABQABAABAAMAAAAaABQABAABAAMAAAAFAAYABAABAAMAAAAHAAsABAABAAMAAAADAA4ABAABAAMAAAAEAA4ABAABAAMAAAAHABAABAABAAMAAAAIAAoABAABAAMAAAAfABAABAADAAMAAAAZABAABAADAAMAAAAYAAgABAABAAMAAAASAAcABAABAAMAAAAaAAgABAABAAMAAAAVAA0ABAABAAMAAAAZAA8ABAABAAMAAAAZAA4ABAABAAMAAAA=")
 tile_set = ExtResource("1_kajil")
 
 [node name="Grass" type="TileMapLayer" parent="TileMapLayers"]
@@ -57,25 +900,53 @@ position = Vector2(2336, 737)
 texture = ExtResource("2_yv0au")
 
 [node name="MineralRaro(nuevaEspada)" type="Sprite2D" parent="TileMapLayers"]
-position = Vector2(2304, 422)
-scale = Vector2(1.1, 1.05)
-texture = ExtResource("3_cpi8a")
+position = Vector2(2302, 400)
+scale = Vector2(0.670139, 0.573403)
+texture = ExtResource("5_kajil")
 
 [node name="Area2D" type="Area2D" parent="TileMapLayers/MineralRaro(nuevaEspada)"]
 script = ExtResource("5_1haig")
 siguiente_minijuego = "uid://dsyk575y8x5eu"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayers/MineralRaro(nuevaEspada)/Area2D"]
-position = Vector2(0.925537, 7.90387)
-rotation = -0.772291
+position = Vector2(-2.98413, 36.7465)
+rotation = -1.57322
 shape = SubResource("RectangleShape2D_bmtd1")
 
+[node name="fire" type="AnimatedSprite2D" parent="TileMapLayers"]
+position = Vector2(2199, 398)
+scale = Vector2(0.517575, 0.511719)
+sprite_frames = SubResource("SpriteFrames_umjan")
+autoplay = "default"
+
+[node name="PointLight2D" type="PointLight2D" parent="TileMapLayers/fire"]
+position = Vector2(-0.000123918, -11.7252)
+scale = Vector2(-0.369221, 0.45594)
+color = Color(0.855448, 0.438639, 0.138714, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
+[node name="fire2" type="AnimatedSprite2D" parent="TileMapLayers"]
+position = Vector2(2406, 399)
+scale = Vector2(0.545878, 0.515442)
+sprite_frames = SubResource("SpriteFrames_3gveu")
+autoplay = "default"
+
+[node name="PointLight2D2" type="PointLight2D" parent="TileMapLayers/fire2"]
+position = Vector2(6.74725e-05, -19.4008)
+rotation = 3.14159
+scale = Vector2(0.350077, -0.452647)
+color = Color(0.855448, 0.438639, 0.138714, 1)
+texture = SubResource("GradientTexture2D_cpi8a")
+texture_scale = 6.46
+
 [node name="Player" parent="." instance=ExtResource("7_p34jg")]
-position = Vector2(131, 463)
+position = Vector2(128, 465)
+walk_speed = 250.0
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 process_mode = 3
-zoom = Vector2(1.7, 1.7)
+zoom = Vector2(2.1, 2.1)
 limit_left = 0
 limit_top = 0
 position_smoothing_enabled = true
@@ -85,8 +956,10 @@ editor_draw_limits = true
 y_sort_enabled = true
 
 [node name="ScreenOverlay" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="HUD" parent="." instance=ExtResource("8_jbyfl")]
+visible = false
 
 [node name="Cinematic" type="Node2D" parent="."]
 script = ExtResource("9_to386")
@@ -217,7 +1090,7 @@ wait_time = 2.0
 autostart = true
 
 [node name="lanzadorFlechas6" type="Node2D" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha"]
-position = Vector2(0, 383)
+position = Vector2(2, 321)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
 direccion_flecha = Vector2(1, 0)
@@ -227,7 +1100,7 @@ wait_time = 2.0
 autostart = true
 
 [node name="lanzadorFlechas7" type="Node2D" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha"]
-position = Vector2(0, 255)
+position = Vector2(768, -320)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
 direccion_flecha = Vector2(1, 0)
@@ -287,7 +1160,7 @@ wait_time = 2.0
 autostart = true
 
 [node name="lanzadorFlechas4" type="Node2D" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha"]
-position = Vector2(1540, 386)
+position = Vector2(1603, 322)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
 direccion_flecha = Vector2(1, 0)
@@ -297,7 +1170,7 @@ wait_time = 2.0
 autostart = true
 
 [node name="lanzadorFlechas5" type="Node2D" parent="trampas/lanzadorFlechas/lanzadorFlechas_derecha"]
-position = Vector2(1664, 255)
+position = Vector2(1667, 257)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
 direccion_flecha = Vector2(1, 0)
@@ -357,7 +1230,7 @@ wait_time = 2.0
 autostart = true
 
 [node name="lanzadorFlechas9" type="Node2D" parent="trampas/lanzadorFlechas/lanzadorFlechas_Izquierda"]
-position = Vector2(-575, 125)
+position = Vector2(-581, 128)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
 direccion_flecha = Vector2(-1, 0)
@@ -377,7 +1250,7 @@ wait_time = 2.0
 autostart = true
 
 [node name="lanzadorFlechas11" type="Node2D" parent="trampas/lanzadorFlechas/lanzadorFlechas_Izquierda"]
-position = Vector2(-896, -8)
+position = Vector2(-897, -75)
 script = ExtResource("11_qi7il")
 escena_flecha = ExtResource("12_v3l3g")
 direccion_flecha = Vector2(-1, 0)
@@ -476,16 +1349,6 @@ direccion_flecha = Vector2(0, -1)
 wait_time = 2.0
 autostart = true
 
-[node name="lanzadorFlechas3" type="Node2D" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba/lanzadorFlechas6"]
-position = Vector2(638, -9)
-script = ExtResource("11_qi7il")
-escena_flecha = ExtResource("12_v3l3g")
-direccion_flecha = Vector2(0, -1)
-
-[node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba/lanzadorFlechas6/lanzadorFlechas3"]
-wait_time = 2.0
-autostart = true
-
 [node name="lanzadorFlechas7" type="Node2D" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba"]
 position = Vector2(-448, 0)
 script = ExtResource("11_qi7il")
@@ -506,9 +1369,19 @@ direccion_flecha = Vector2(0, -1)
 wait_time = 2.0
 autostart = true
 
+[node name="lanzadorFlechas9" type="Node2D" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba"]
+position = Vector2(892, -291)
+script = ExtResource("11_qi7il")
+escena_flecha = ExtResource("12_v3l3g")
+direccion_flecha = Vector2(0, -1)
+
+[node name="Timer" type="Timer" parent="trampas/lanzadorFlechas/lanzadorFlechas_arriba/lanzadorFlechas9"]
+wait_time = 2.0
+autostart = true
+
 [node name="8BitCave" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("13_r5ho4")
-volume_db = -35.116
+volume_db = -37.13
 autoplay = true
 
 [connection signal="body_entered" from="TileMapLayers/MineralRaro(nuevaEspada)/Area2D" to="TileMapLayers/MineralRaro(nuevaEspada)/Area2D" method="_on_body_entered"]

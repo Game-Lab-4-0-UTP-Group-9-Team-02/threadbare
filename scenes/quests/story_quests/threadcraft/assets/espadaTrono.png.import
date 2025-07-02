@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjakp6o3lhvcr"
-path="res://.godot/imported/Fire.png-21921a2ae03d098d105175899821194e.ctex"
+uid="uid://bs1yfkdultdx4"
+path="res://.godot/imported/espadaTrono.png-9aec9a5eb624e241de5a825a9689330d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/third_party/tiny-swords/Effects/Fire/Fire.png"
-dest_files=["res://.godot/imported/Fire.png-21921a2ae03d098d105175899821194e.ctex"]
+source_file="res://scenes/quests/story_quests/threadcraft/assets/espadaTrono.png"
+dest_files=["res://.godot/imported/espadaTrono.png-9aec9a5eb624e241de5a825a9689330d.ctex"]
 
 [params]
 
