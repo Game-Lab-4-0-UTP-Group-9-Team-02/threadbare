@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://l6qd6gr6uhlw"]
 
 [ext_resource type="Script" uid="uid://gkmr5s3x7sgj" path="res://flechaNueva.gd" id="1_jxtda"]
-[ext_resource type="Texture2D" uid="uid://c8owfumsiul1" path="res://scenes/quests/story_quests/threadcraft/assets/flecha.png" id="2_vx6d3"]
+[ext_resource type="Texture2D" uid="uid://crtbkicse57v4" path="res://scenes/quests/story_quests/threadcraft/assets/arrow.png" id="2_jxtda"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_btj30"]
-size = Vector2(72, 8)
+size = Vector2(71, 8)
 
 [node name="Area2D" type="Area2D"]
 collision_layer = 256
@@ -12,10 +12,10 @@ collision_mask = 17
 script = ExtResource("1_jxtda")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1.43051e-06, 1.19209e-07)
-rotation = -3.13112
-scale = Vector2(0.0886698, 0.0979054)
-texture = ExtResource("2_vx6d3")
+position = Vector2(-2.24007, 17.6776)
+rotation = -4.71262
+scale = Vector2(0.290636, 0.463933)
+texture = ExtResource("2_jxtda")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visibility_layer = 3

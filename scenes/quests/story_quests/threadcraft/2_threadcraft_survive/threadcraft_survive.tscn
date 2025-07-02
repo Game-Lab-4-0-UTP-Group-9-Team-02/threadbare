@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://c5smuyflby4ca"]
+[gd_scene load_steps=10 format=4 uid="uid://c0jj35lojsq2s"]
 
 [ext_resource type="TileSet" uid="uid://07fq3rspk8ia" path="res://scenes/tileset.tres" id="2_75u1l"]
 [ext_resource type="Texture2D" uid="uid://boeaxk35yjpwl" path="res://scenes/game_elements/props/door/components/door_closed.png" id="2_e07pb"]
