@@ -13,6 +13,8 @@ const REQUIRED_ANIMATIONS: Array[StringName] = [
 	&"idle", &"walk", &"attack", &"attack anticipation", &"defeated"
 ]
 
+var hit_count: int = 0
+
 const DEFAULT_SPRITE_FRAME: SpriteFrames = preload("uid://deosvk5k4su5f")
 
 ## When targetting the next walking position, skip this slice of the circle.
@@ -251,6 +253,8 @@ func shoot_projectile() -> void:
 		_is_attacking = false
 		return
 	var projectile: Projectile = PROJECTILE_SCENE.instantiate()
+	projectile.can_hit_enemy = true
+	projectile.add_to_group("enemy_projectiles")
 	projectile.direction = projectile_marker.global_position.direction_to(player.global_position)
 	scale.x = 1 if projectile.direction.x < 0 else -1
 	projectile.label = allowed_labels.pick_random()
@@ -272,10 +276,21 @@ func shoot_projectile() -> void:
 
 
 func _on_got_hit(body: Node2D) -> void:
-	if body is Projectile and not body.can_hit_enemy and not _is_defeated:
-		return
-	body.queue_free()
-	animation_player.play(&"got hit")
+	if body is Projectile:
+		if not body.can_hit_enemy:
+			return
+		if body.is_in_group("enemy_projectiles"):
+			if projectile_marker.global_position.distance_to(body.global_position) < 30:
+				return  
+			
+		body.queue_free()
+		hit_count += 1
+		
+		if hit_count >= 3:
+			remove()
+			get_tree().change_scene_to_file("res://scenes/quests/story_quests/threadcraft/4_threadcraft_outro/threadcraft_outro.tscn")
+		else:
+			animation_player.play(&"defeated")
 
 
 ## Start attacking and/or walking. The enemy will be idle until this is called.

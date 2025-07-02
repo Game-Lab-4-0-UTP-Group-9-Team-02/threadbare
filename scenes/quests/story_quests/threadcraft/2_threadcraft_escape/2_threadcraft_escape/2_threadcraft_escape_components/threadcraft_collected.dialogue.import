@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://caa6nvaujmo3y"
+path="res://.godot/imported/threadcraft_collected.dialogue-b7ea43f3a66b6a58bcd934982994e737.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/threadcraft/2_threadcraft_escape/2_threadcraft_escape/2_threadcraft_escape_components/threadcraft_collected.dialogue"
+dest_files=["res://.godot/imported/threadcraft_collected.dialogue-b7ea43f3a66b6a58bcd934982994e737.tres"]
+
+[params]
+
+defaults=true

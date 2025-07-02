@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dwb5hkfktjw17"
+path="res://.godot/imported/template_combat.dialogue-dc5cb462b6c5169a5d9f81452fbfd179.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/threadcraft/1_threadcraft_find/threadcraft_combat_components/template_combat.dialogue"
+dest_files=["res://.godot/imported/template_combat.dialogue-dc5cb462b6c5169a5d9f81452fbfd179.tres"]
+
+[params]
+
+defaults=true

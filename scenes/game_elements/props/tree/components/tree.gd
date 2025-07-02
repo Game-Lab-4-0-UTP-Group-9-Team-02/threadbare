@@ -10,7 +10,6 @@ const DEFAULT_SPRITE_FRAME: SpriteFrames = preload("uid://d36eq8tqdaxdy")
 
 @onready var animated_sprite_2d: AnimatedSprite2D = %AnimatedSprite2D
 
-
 func _set_sprite_frames(new_sprite_frames: SpriteFrames) -> void:
 	sprite_frames = new_sprite_frames
 	if not is_node_ready():
@@ -37,3 +36,5 @@ func _notification(what: int) -> void:
 			scale = Vector2(x_scale, y_scale)
 		NOTIFICATION_EDITOR_PRE_SAVE:
 			animated_sprite_2d.frame_progress = 0
+
+	
