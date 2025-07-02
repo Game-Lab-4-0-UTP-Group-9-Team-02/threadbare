@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://tsjbsgfiga76"
+path="res://.godot/imported/threadcraft_checkpoint.dialogue-e455e3daf235d81142c92f3154fb15d1.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/threadcraft/2_threadcraft_escape/2_threadcraft_escape/2_threadcraft_escape_components/threadcraft_checkpoint.dialogue"
+dest_files=["res://.godot/imported/threadcraft_checkpoint.dialogue-e455e3daf235d81142c92f3154fb15d1.tres"]
+
+[params]
+
+defaults=true

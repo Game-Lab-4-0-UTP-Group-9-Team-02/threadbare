@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cibc5dsf4j4if"
+path="res://.godot/imported/threadcraft_firekeeper.dialogue-ab0178412a3cb3e0ae4793456f181378.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/threadcraft/2_threadcraft_escape/2_threadcraft_escape/2_threadcraft_escape_components/threadcraft_firekeeper.dialogue"
+dest_files=["res://.godot/imported/threadcraft_firekeeper.dialogue-ab0178412a3cb3e0ae4793456f181378.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://di5k4ihnlf3ym"
+path="res://.godot/imported/threadcraft_stealth.dialogue-deabf37c5b8f3fb5d2d0e8c35291cbaa.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/threadcraft/2_threadcraft_escape/2_threadcraft_escape/2_threadcraft_escape_components/threadcraft_stealth.dialogue"
+dest_files=["res://.godot/imported/threadcraft_stealth.dialogue-deabf37c5b8f3fb5d2d0e8c35291cbaa.tres"]
+
+[params]
+
+defaults=true

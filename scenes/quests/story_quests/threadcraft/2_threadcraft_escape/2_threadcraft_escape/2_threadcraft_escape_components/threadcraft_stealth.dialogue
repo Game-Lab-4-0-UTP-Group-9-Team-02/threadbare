@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+~ start
+if str(GameState.current_spawn_point) != ""
+	=> END
+Coneyman deberá pasar a través de guardias para no ser visto y escapar
+=> END
